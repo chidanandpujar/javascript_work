@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Javascript to check Password format</title>
+    </head>
+    <body>
+        <script>
+        function test_var() {
+            let string = prompt("Enter String");
+            document.write(
+                /(?=.*[a-z])(?=.*[A-Z])/.test(string));
+        }
+        test_var();
+        </script>
+    </body>
+
+</html>
