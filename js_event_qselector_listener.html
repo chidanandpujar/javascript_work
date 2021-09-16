@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <h3>Javascript Events listner</h3>
+    <button id="pricheck"> Check Price Range </button>
+    <script>
+        let pbtn = document.querySelector("#pricheck");
+        pbtn.addEventListener('click', ()=> {
+            n = prompt("Enter Price ", 10);
+            if(n > 9 && n < 299) {
+                    alert("Price is within Range")
+            } else {
+                    alert("Price is not within Range");
+            }
+                
+        });
+
+      
+    </script>
+</html>
