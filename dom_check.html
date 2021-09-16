@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <h6>Checking document object model by Tag Name</h6>
+    <h6>Checking document object model by Tag Name</h6>
+    <h6>Checking document object model by Tag Name<h6>
+
+    <h5 id="dom1">Checking document object model by Id Name</h5>
+    <h5 id="dom2">Checking document object model by Id Name</h5>
+    <h5 id="dom3">Checking document object model by Id Name</h5>
+
+    <script>
+        let h6 = document.getElementsByTagName("h6");
+        for(i=0;h6[i];i++)
+            document.write("Header Elements" +  h6[i].innerHTML + "<br/>");
+
+        var h5 = document.getElementById("dom1");
+        document.write("Header Elements" + h5.innerHTML + "<br/>");
+
+        var h5 = document.getElementById("dom2");
+        document.write("Header Elements" + h5.innerHTML + "<br/>");
+
+        var h5 = document.getElementById("dom3");
+        document.write("Header Elements" + h5.innerHTML + "<br/>");
+    </script>
+             
+</html>
